@@ -55,7 +55,7 @@ for image_file in image_files:
     classes = results[0].boxes.cls.cpu().numpy()  # Get class IDs
 
     # Initialize annotation variables
-    occlusion_status = -1  # Default: no occlusion
+    occlusion_status = 0 # Default: no occlusion
     out_of_view_status = 0  # Default: not out of view
     ground_truth_values = []  # To store bounding box values
 
